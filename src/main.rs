@@ -3,10 +3,11 @@ use std::{
     error::Error,
     io,
 };
+
 use serde::Deserialize;
 
-static METAL_SIZES: [i16; 7] = [1000, 800, 600, 400, 200, 100, 50];
-static CERAMIC_SIZES: [i16; 7] = [800, 640, 480, 320, 160, 80, 40];
+const METAL_SIZES: [i16; 7] = [1000, 800, 600, 400, 200, 100, 50];
+const CERAMIC_SIZES: [i16; 7] = [800, 640, 480, 320, 160, 80, 40];
 
 #[derive(Debug,Deserialize)]
 struct Road {
